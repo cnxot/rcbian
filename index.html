@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Brief: RCB Promotional Landing Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Bebas+Neue&display=swap');
+
+        :root {
+            --rcb-red: #EC1C24;
+            --rcb-black: #2B2A29;
+            --rcb-gold: #FFCB05;
+            --text-light: #f5f5f5;
+            --text-dark: #333;
+            --bg-light: #ffffff;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: var(--text-dark);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px solid var(--rcb-red);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            color: var(--rcb-black);
+            font-size: 2.8em;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+        }
+
+        .meta-info {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            color: var(--rcb-red);
+            font-size: 2em;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: var(--rcb-black);
+            margin-top: 25px;
+        }
+
+        p, ul, ol {
+            margin-bottom: 1em;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        .palette {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .swatch {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.8em;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .swatch-label {
+            margin-top: 90px; /* Position label below swatch */
+            font-weight: normal;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background-color: #2d2d2d;
+            color: var(--text-light);
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .js-comment { color: #6a9955; }
+        .js-keyword { color: #569cd6; }
+        .js-string { color: #ce9178; }
+        .js-function { color: #dcdcaa; }
+        .js-number { color: #b5cea8; }
+        .js-variable { color: #9cdcfe; }
+
+        .disclaimer {
+            background-color: #fffbe6;
+            border-left: 5px solid var(--rcb-gold);
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+
+        .disclaimer strong {
+            color: var(--rcb-black);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Project Brief: Development of a Mobile-First, Interactive Promotional Landing Page Application</h1>
+            <div class="meta-info">
+                <strong>Version:</strong> 1.0 | <strong>Date:</strong> October 26, 2023 | <strong>Author:</strong> AI Content Generator
+            </div>
+        </header>
+
+        <main>
+            <section id="objective">
+                <h2>1. Objective</h2>
+                <p>This project brief outlines the development of a mobile-first, interactive promotional landing page themed around the Royal Challengers Bengaluru (RCB) cricket team. The primary objective is educational: to provide a hands-on learning experience in front-end development, user interface design, and JavaScript interactivity. The application will simulate common "deceptive patterns" found in online promotions, not to endorse them, but to deconstruct their mechanics for learning purposes. The final stage of the user journey will explicitly reveal the simulation and provide educational context on user psychology and ethical web design.</p>
+                <div class="disclaimer">
+                    <strong>Ethical Mandate:</strong> This project is strictly for educational purposes. It aims to teach developers how to recognize and understand potentially manipulative design patterns to build more transparent and ethical web applications. It does not endorse the use of deceptive tactics in live projects.
+                </div>
+            </section>
+
+            <section id="theme">
+                <h2>2. Core Theme & Branding</h2>
+                <p>The application's visual identity will be heavily inspired by the official branding of the Royal Challengers Bengaluru, creating an immersive and recognizable experience for fans.</p>
+                <h3>Color Palette</h3>
+                <div class="palette">
+                    <div>
+                        <div class="swatch" style="background-color: var(--rcb-red); color: white;">#EC1C24</div>
+                        <div class="swatch-label">RCB Red (Primary)</div>
+                    </div>
+                    <div>
+                        <div class="swatch" style="background-color: var(--rcb-black); color: white;">#2B2A29</div>
+                        <div class="swatch-label">RCB Black (Text/Accents)</div>
+                    </div>
+                    <div>
+                        <div class="swatch" style="background-color: var(--rcb-gold);">#FFCB05</div>
+                        <div class="swatch-label">RCB Gold (Highlights)</div>
+                    </div>
+                    <div>
+                        <div class="swatch" style="background-color: #f5f5f5; border: 1px solid #ccc">#F5F5F5</div>
+                        <div class="swatch-label">Light Grey (Background)</div>
+                    </div>
+                </div>
+                <h3>Typography</h3>
+                <ul>
+                    <li><strong>Headings:</strong> 'Bebas Neue', sans-serif. A bold, condensed font for impactful titles.</li>
+                    <li><strong>Body Text:</strong> 'Poppins', sans-serif. A clean, modern, and highly readable font for paragraphs and UI text.</li>
+                </ul>
+            </section>
+
+            <section id="specs">
+                <h2>3. Technical Specifications</h2>
+                <ul>
+                    <li><strong>Frameworks:</strong> Vanilla HTML5, CSS3, and JavaScript (ES6+). No external libraries or frameworks (like React or Vue) are required to keep the focus on core web technologies.</li>
+                    <li><strong>Architecture:</strong> A single-page application (SPA) architecture, where content for different steps is dynamically shown/hidden using JavaScript. This avoids page reloads and creates a seamless user experience.</li>
+                    <li><strong>Responsiveness:</strong> A mobile-first approach is mandatory. All components must be designed for small screens and scale gracefully to desktop sizes using media queries.</li>
+                </ul>
+            </section>
+
+            <section id="journey">
+                <h2>4. User Journey & Component Breakdown</h2>
+                <p>The user will progress through a series of steps designed to simulate a promotional contest.</p>
+                
+                <h3>Step 1: The Lure (Initial View)</h3>
+                <ul>
+                    <li><strong>Visuals:</strong> Full-screen splash with an RCB-themed background. A large, animated "PLAY BOLD, WIN BIG!" headline.</li>
+                    <li><strong>Text:</strong> "Exclusive Chance! Win 2 VIP Tickets to the next RCB match at Chinnaswamy Stadium!"</li>
+                    <li><strong>Functionality:</strong> A single, prominent button with the text "TAP TO PLAY!". Clicking this button triggers the next step.</li>
+                </ul>
+
+                <h3>Step 2: The Illusion of Progress</h3>
+                <ul>
+                    <li><strong>Visuals:</strong> The button from Step 1 is replaced by a progress bar.</li>
+                    <li><strong>Text:</strong> "Verifying your entry... Analyzing your fan level..."</li>
+                    <li><strong>Functionality:</strong> The progress bar animates from 0% to 100% over 3-4 seconds to build anticipation. This uses a simple `setInterval` function.</li>
+                </ul>
+                <pre><code class="language-js"><span class="js-comment">// Sample code for the progress bar</span>
+<span class="js-keyword">function</span> <span class="js-function">startProgressBar</span>() {
+  <span class="js-keyword">let</span> <span class="js-variable">width</span> = <span class="js-number">1</span>;
+  <span class="js-keyword">const</span> <span class="js-variable">progressBar</span> = document.<span class="js-function">getElementById</span>(<span class="js-string">'myBar'</span>);
+  <span class="js-keyword">const</span> <span class="js-variable">interval</span> = <span class="js-function">setInterval</span>(() => {
+    <span class="js-keyword">if</span> (<span class="js-variable">width</span> >= <span class="js-number">100</span>) {
+      <span class="js-function">clearInterval</span>(<span class="js-variable">interval</span>);
+      <span class="js-function">showNextStep</span>(); <span class="js-comment">// Transition to the next part</span>
+    } <span class="js-keyword">else</span> {
+      <span class="js-variable">width</span>++;
+      <span class="js-variable">progressBar</span>.style.width = <span class="js-variable">width</span> + <span class="js-string">'%'</span>;
+      <span class="js-variable">progressBar</span>.innerHTML = <span class="js-variable">width</span> + <span class="js-string">'%'</span>;
+    }
+  }, <span class="js-number">30</span>); <span class="js-comment">// 30ms interval for smooth animation</span>
+}</code></pre>
+                
+                <h3>Step 3: The "Final Step" & The Catch</h3>
+                <ul>
+                    <li><strong>Visuals:</strong> A large congratulatory message with confetti animations.</li>
+                    <li><strong>Text:</strong> "CONGRATULATIONS! You've Won! To claim your tickets, complete the final step: Share this with 10 friends on WhatsApp!"</li>
+                    <li><strong>Functionality:</strong> A "Share on WhatsApp" button is displayed. This is a classic "forced sharing" dark pattern. Clicking the button in this educational app will not actually trigger a share action but will instead lead to the final reveal.</li>
+                </ul>
+                <pre><code class="language-js"><span class="js-comment">// Sample code for the "share" button click</span>
+<span class="js-keyword">const</span> <span class="js-variable">shareButton</span> = document.<span class="js-function">getElementById</span>(<span class="js-string">'shareBtn'</span>);
+
+<span class="js-variable">shareButton</span>.<span class="js-function">addEventListener</span>(<span class="js-string">'click'</span>, () => {
+  <span class="js-comment">// Instead of sharing, we reveal the educational content</span>
+  <span class="js-function">revealEducationalDebrief</span>();
+});</code></pre>
+                
+                <h3>Step 4: The Reveal & Educational Debrief</h3>
+                <ul>
+                    <li><strong>Visuals:</strong> The promotional interface fades away, replaced by a clean, educational layout.</li>
+                    <li><strong>Text:</strong> "Hold on! This was a simulation." A detailed explanation follows, covering:
+                        <ul>
+                            <li><strong>The Lure:</strong> Use of scarcity and high-value reward.</li>
+                            <li><strong>Anticipation:</strong> How fake progress bars create investment.</li>
+                            <li><strong>The Dark Pattern:</strong> Explaining "Forced Sharing" and how it manipulates users into becoming marketing agents.</li>
+                            <li><strong>Our Goal:</strong> A clear statement that this was a learning exercise in front-end development and ethical design.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Functionality:</strong> Links to resources about ethical design, dark patterns, and responsible web development.</li>
+                </ul>
+            </section>
+
+            <section id="assets">
+                <h2>5. Asset Requirements</h2>
+                <ul>
+                    <li><strong>Images:</strong>
+                        <ul>
+                            <li>`bg-stadium.jpg`: A high-resolution, slightly blurred image of a cricket stadium for the background.</li>
+                            <li>`rcb-logo.svg`: The official RCB logo in SVG format for sharpness.</li>
+                            <li>`confetti.gif`: An animated GIF for the "congratulations" screen.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fonts:</strong>
+                        <ul>
+                            <li>'Bebas Neue' and 'Poppins' from Google Fonts. Must be linked in the HTML `<head>`.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="conclusion">
+                <h2>6. Conclusion & Learning Outcomes</h2>
+                <p>Upon completing this project, the developer will have gained practical experience in:</p>
+                <ul>
+                    <li><strong>Responsive, Mobile-First Design:</strong> Building a layout that works across all device sizes using CSS Flexbox/Grid and media queries.</li>
+                    <li><strong>JavaScript DOM Manipulation:</strong> Dynamically changing content, styles, and classes to create an interactive, single-page experience.</li>
+                    <li><strong>Event Handling and Timers:</strong> Using `addEventListener` for user interactions and `setInterval`/`setTimeout` for animations and timed events.</li>
+                    <li><strong>Ethical Web Development:</strong> Critically analyzing UI/UX patterns, understanding their psychological impact, and recognizing the importance of building user-respecting applications. The project serves as a tangible example of what *not* to do in a real-world scenario, reinforcing a developer's ethical responsibilities.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            This project brief was generated as a one-page HTML site to demonstrate a comprehensive, educational development task.
+        </footer>
+    </div>
+
+</body>
+</html>
